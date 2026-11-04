@@ -54,7 +54,7 @@
 
 ## 6. 验证口径
 
-- 观测：老师 ChinaFlux FluxSM 日尺度（39 站中取对应站）。
+- 观测： ChinaFlux FluxSM 日尺度（39 站中取对应站）。
 - 单位：能量通量 W/m²、碳通量 gC/m²/d、ET mm/d。
 - 指标：R² / RMSE / MAE / Bias / N（不跳首年）。
 - 对比：两版本取共同 31 站公平比较，见 `results/version_comparison.csv`。
