@@ -1,0 +1,32 @@
+# 大数据目录（进阿里网盘，不入 git）
+data-raw/
+data/forcing/
+data/lai/
+data/soil/
+data/obs/
+results/
+cases/
+model/
+
+# 大文件类型
+*.nc
+*.rda
+*.rds
+*.zip
+*.xlsx
+*.tar.gz
+*.7z
+
+# R 临时文件
+.Rproj.user
+.Rhistory
+.RData
+*.log
+
+# 系统/编辑器
+.vscode
+.idea
+Thumbs.db
+
+# pi 代理临时目录
+.pi/
