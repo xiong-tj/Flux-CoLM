@@ -21,16 +21,17 @@ for (v in c("ET", "H", "Rnet", "GPP", "Resp")) {
   mae  <- mean(abs(d$sim - d$obs))
   n    <- nrow(d)
   lab  <- sprintf("R2 = %.2f    RMSE = %.2f    MAE = %.2f    N = %d", r2, rmse, mae, n)
+  lim  <- range(c(d$obs, d$sim), na.rm = TRUE)
 
   p <- ggplot(d, aes(x = obs, y = sim)) +
     geom_point(alpha = 0.06, size = 0.4, color = "steelblue") +
     geom_abline(slope = 1, intercept = 0, color = "red", linewidth = 0.6) +
-    coord_equal() +
+    coord_equal(xlim = lim, ylim = lim) +
     labs(title = paste0(v, "  模拟 vs 观测（31 站合并）"),
          subtitle = lab, x = "观测", y = "模拟") +
     theme_bw(base_size = 12)
 
-  ggsave(file.path(fig_dir, paste0("scatter_", v, ".png")), p, width = 6, height = 5.5, dpi = 150)
+  ggsave(file.path(fig_dir, paste0("scatter_", v, ".png")), p, width = 5.5, height = 5.5, dpi = 150)
   cat("scatter_", v, ".png  N=", n, "\n", sep = "")
 }
 
