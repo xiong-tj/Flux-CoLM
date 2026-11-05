@@ -9,7 +9,7 @@
 ├── scripts/          # 流水线脚本（自己版本 01~11 + CMFD 版本 cmfd_01~08）
 ├── R/                # 公共函数
 ├── data/             # 小数据，入 git（站点清单、元数据、变量单位表）
-├── data-raw/         # 原始大数据，进阿里网盘（强迫、GLASS、soil5、观测）
+├── data-raw/         # 原始大数据，进百度网盘（强迫、GLASS、soil5、观测）
 ├── results/          # 中间结果，进网盘（强迫表、提取通量、精度表）
 ├── cases/            # 案例与模型输出，进网盘（self_version、cmfd_version）
 ├── Figures/          # 图（散点、时间序列），入 git
@@ -74,9 +74,9 @@ source("scripts/cmfd_08_plot.R")
 ## 数据存储
 
 - **代码 + 小数据 + 文档 + 图**：本仓库（GitHub）
-- **大数据（原始数据 + 结果）**：阿里云盘
-  - 链接：https://www.alipan.com/s/AGM8Nw8iTWu
-  - 提取码：`py85`
+- **大数据（原始数据 + 结果）**：百度网盘
+  - 链接：https://pan.baidu.com/s/1yJfcEzHiI3BGfPGPBUIsPg?pwd=kjqy
+  - 提取码：`kjqy`
   - 内容：`data-raw/`（原始数据）+ `results/`（中间结果 CSV）
     - 强迫：sp31（`Forcing_Hourly_Met_sp31_v20260629_MergeCFMD.csv`）、CMFD（`ChinaFlux_sp38_final_forcing_1h.csv`）
     - LAI：GLASS V6.1（`LAI_MODIS_GLASS_G005D_<year>_v20260608.nc`）
