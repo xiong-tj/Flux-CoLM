@@ -9,7 +9,7 @@
 
 | 项 | 说明 |
 |---|---|
-| 文件 | `data/forcing/cmfd/ChinaFlux_sp38_final_forcing_1h.csv` |
+| 文件 | `data-raw/forcing/cmfd/ChinaFlux_sp38_final_forcing_1h.csv` |
 | 数据集 | **CMFD V2**（中国区域高分辨率气象强迫再分析，清华大学阳坤团队） |
 | 性质 | **0.1° 格点再分析，非站点实测**；3 小时原生，已插值到逐时 |
 | 时间 | 世界时 UTC，统一 **+8 小时**转北京钟面 |
