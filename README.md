@@ -75,8 +75,8 @@ source("scripts/cmfd_08_plot.R")
 
 - **代码 + 小数据 + 文档 + 图**：本仓库（GitHub）
 - **大数据（原始数据 + 结果）**：百度网盘
-  - 链接：https://pan.baidu.com/s/1yJfcEzHiI3BGfPGPBUIsPg?pwd=kjqy
-  - 提取码：`kjqy`
+  - 链接：https://pan.baidu.com/s/1XA1xQAjkPXu0VV4vlZgO0w?pwd=cw7f
+  - 提取码：`cw7f`
   - 内容：`data-raw/`（原始数据）+ `results/`（中间结果 CSV）
     - 强迫：sp31（`Forcing_Hourly_Met_sp31_v20260629_MergeCFMD.csv`）、CMFD（`ChinaFlux_sp38_final_forcing_1h.csv`）
     - LAI：GLASS V6.1（`LAI_MODIS_GLASS_G005D_<year>_v20260608.nc`）
