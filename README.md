@@ -28,19 +28,18 @@
 
 ## 数据流向
 
+自己版本（scripts/01~11）：
+
 ```
 data-raw/forcing(sp31,CMFD) ─┐
-data-raw/lai(GLASS) ─────────┤
-data-raw/soil(soil5) ────────┤→ scripts/01~06 → cases/<版本>/ → scripts/07 批量跑
-data-raw/obs(FluxSM) ────────┘                                    ↓
-                                                          scripts/08 提取通量
-                                                                   ↓
-                                              scripts/09 与 FluxSM 算精度
-                                                                   ↓
-                                              scripts/10 绘图、11 报告
+data-raw/lai(GLASS) ─────────┼─→ 01~06 生成站点数据 → 07 批量跑 → 08 提取通量
+data-raw/soil(soil5) ────────┘                                        ↓
+data-raw/obs(FluxSM) ───────────────────────────────────→ 09 与观测算精度
+                                                                    ↓
+                                                          10 绘图、11 报告
 ```
 
-CMFD 版本同流程，脚本前缀 `cmfd_`，末尾加 `cmfd_07` 两版本对比。
+CMFD 版本同流程，脚本前缀 `cmfd_`：`cmfd_01~03` 数据准备、`cmfd_04` 批量跑、`cmfd_05` 提取、`cmfd_06` 算精度、`cmfd_07` 两版本对比、`cmfd_08` 绘图。
 
 ## 复现步骤
 
