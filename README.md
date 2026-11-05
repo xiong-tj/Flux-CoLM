@@ -75,11 +75,17 @@ source("scripts/cmfd_08_plot.R")
 ## 数据存储
 
 - **代码 + 小数据 + 文档 + 图**：本仓库（GitHub）
-- **大数据**：阿里网盘（`data-raw/`、`results/`、`cases/`、`model/`），链接见 TODO/网盘
-  - 强迫：sp31（`Forcing_Hourly_Met_sp31_v20260629_MergeCFMD.csv`）、CMFD（`ChinaFlux_sp38_final_forcing_1h.csv`）
-  - LAI：GLASS V6.1（`LAI_MODIS_GLASS_G005D_<year>_v20260608.nc`）
-  - 土壤：SoilGrids soil5
-  - 观测：老师 ChinaFlux FluxSM（`ChinaFlux_FluxSM_39sp_v20260330.rda`）
+- **大数据（原始数据 + 结果）**：阿里云盘
+  - 链接：https://www.alipan.com/s/AGM8Nw8iTWu
+  - 提取码：`py85`
+  - 内容：`data-raw/`（原始数据）+ `results/`（中间结果 CSV）
+    - 强迫：sp31（`Forcing_Hourly_Met_sp31_v20260629_MergeCFMD.csv`）、CMFD（`ChinaFlux_sp38_final_forcing_1h.csv`）
+    - LAI：GLASS V6.1（`LAI_MODIS_GLASS_G005D_<year>_v20260608.nc`）
+    - 土壤：SoilGrids soil5
+    - 观测：老师 ChinaFlux FluxSM（`ChinaFlux_FluxSM_39sp_v20260330.rda`）
+- **不分享（本地/私存）**：
+  - `cases/`（模型输出 NC，~13GB，可再生）
+  - `model/`（CoLM 程序，~200MB）
 
 ## 核心文档
 
